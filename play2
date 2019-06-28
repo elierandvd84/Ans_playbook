@@ -1,0 +1,10 @@
+-
+  name: install_apt
+  hosts: all
+  become: true
+  become_user: root
+  tasks:
+    -
+      name: install apache2
+      command: apt-get install apache2 -y
+
